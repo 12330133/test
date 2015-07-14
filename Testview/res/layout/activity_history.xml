@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9f8c9"
+    tools:context=".HistoryActivity" >
+    
+    <RelativeLayout 
+        android:id="@+id/toprl"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#d9f8c9">
+    <Button
+        android:id="@+id/backbtn_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#59a019"
+        android:textColor="#ffffff"
+        android:text="BACK"
+        android:textSize="25dp"/>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/midline"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true">
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/uprl"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/toprl">
+    <TextView 
+        android:id="@+id/share_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:textSize="20sp"
+        android:textColor="#59a019"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <RelativeLayout 
+        android:id="@+id/listrl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/share_"
+        android:padding="5dp">
+    <ListView
+        android:id="@+id/sharelist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#d9f8c9"
+        />
+    </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/dd"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/uprl"
+        >
+    <TextView
+        android:id="@+id/borrow_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrow"
+        android:textSize="20sp"
+        android:textColor="#59a019"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <RelativeLayout
+        android:id="@+id/listrl1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/borrow_"
+        android:padding="5dp">
+    
+    <ListView
+        android:id="@+id/borrowlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#d9f8c9"/>
+    </RelativeLayout>"
+        
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

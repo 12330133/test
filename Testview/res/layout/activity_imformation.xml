@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9f8c9"
+    tools:context=".ImformationActivity" >
+    
+    <RelativeLayout 
+        android:id="@+id/btn_rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d9f8c9"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+    
+    <Button 
+       android:id="@+id/editbtn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Edit"
+       android:textSize="20sp"
+       android:textColor="#ffffff"
+       android:layout_centerHorizontal="true"
+       android:background="#59a019"
+       />
+    
+    <Button 
+        android:id="@+id/Confirmbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="#59a019"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        />
+    <Button 
+        android:id="@+id/historybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="#59a019"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+  
+<RelativeLayout 
+        android:isScrollContainer="true"
+        android:scrollbarStyle="outsideInset"    
+        android:id="@+id/imforrl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#d9f8c9"
+        android:padding="7dp"
+        android:layout_above="@+id/btn_rl1">
+            <TextView
+        		android:id="@+id/studentID"
+        		android:singleLine="true"
+        		android:layout_width="90dp"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:layout_alignParentTop="true"
+        		android:layout_marginRight="5dp"
+        		android:text="Id:               "
+        		android:textSize="15sp"
+        		android:textColor="#3d3d3c"
+        		android:background="#adf86b"
+        		/>
+    		<EditText
+        		android:id="@+id/userID"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:textSize="15sp"
+        		android:text="12330133"
+        		android:textColor="#3d3d3c"
+        		android:background="#adf86b"
+        		android:enabled="false"
+        		android:layout_alignParentTop="true"
+        		android:layout_toRightOf="@+id/studentID"
+        		/>
+
+    
+            <TextView 
+        		android:id="@+id/studentName"
+        		android:singleLine="true"
+        		android:layout_width="90dp"
+       		    android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:layout_marginRight="5dp"
+        		android:layout_below="@+id/studentID"
+        		android:layout_marginTop="5dp"
+        		android:text="Name:      "
+        		android:textSize="15sp"
+        		android:textColor="#3d3d3c"
+        		android:background="#79f449" 
+        		/>
+    
+    		<EditText 
+        		android:id="@+id/userName"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_below="@+id/studentID"
+        		android:layout_marginTop="5dp"
+        		android:layout_toRightOf="@+id/studentName"
+        		android:textSize="15sp"
+        		android:text="USER NAME    "
+        		android:textColor="#3d3d3c"
+        		android:ellipsize="end"
+        		android:singleLine="true"
+        		android:background="#79f449"
+        		android:enabled="false"
+        		/>
+
+    
+            <TextView 
+        		android:id="@+id/studentSchool"
+        		android:singleLine="true"
+        		android:layout_width="90dp"
+       		    android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:layout_marginRight="5dp"
+        		android:layout_below="@+id/studentName"
+        		android:layout_marginTop="5dp"
+        		android:text="School:      "
+        		android:textSize="15sp"
+        		android:textColor="#3d3d3c"
+        		android:background="#adf86b" 
+        		/>
+    
+    		<EditText
+        		android:id="@+id/userSchool"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_below="@+id/studentName"
+        		android:layout_toRightOf="@+id/studentSchool"
+        		android:layout_marginTop="5dp"
+        		android:textSize="15sp"
+        		android:text="Sun Yet Sen University"
+        		android:textColor="#3d3d3c"
+        		android:ellipsize="end"
+        		android:singleLine="true"
+        		android:background="#adf86b"
+        		android:enabled="false"
+        		/>
+
+    
+            <TextView 
+        		android:id="@+id/studentProfession"
+        		android:singleLine="true"
+        		android:layout_width="90dp"
+       		    android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:layout_below="@+id/studentSchool"
+        		android:layout_marginTop="5dp"
+        		android:layout_marginRight="5dp"
+        		android:text="Profession:"
+        		android:textSize="15sp"
+        		android:textColor="#3d3d3c"
+        		android:background="#79f449" 
+        		/>
+    
+    		<EditText 
+        		android:id="@+id/userProfession"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_below="@+id/studentSchool"
+        		android:layout_toRightOf="@+id/studentProfession"
+        		android:layout_marginTop="5dp"
+        		android:textSize="15sp"
+        		android:text="Software"
+        		android:textColor="#3d3d3c"
+        		android:ellipsize="end"
+        		android:singleLine="true"
+        		android:background="#79f449"
+        		android:enabled="false"
+        		/>
+    
+            <TextView 
+        		android:id="@+id/studentTel"
+        		android:singleLine="true"
+        		android:layout_width="90dp"
+       		    android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:layout_below="@+id/studentProfession"
+        		android:layout_marginTop="5dp"
+        		android:layout_marginRight="5dp"
+        		android:text="Tel:  "
+        		android:textSize="15sp"
+        		android:textColor="#3d3d3c"
+        		android:background="#adf86b" 
+        		/>
+    
+    		<EditText 
+        		android:id="@+id/userTel"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_below="@+id/studentProfession"
+        		android:layout_toRightOf="@+id/studentTel"
+        		android:layout_marginTop="5dp"
+        		android:textSize="15sp"
+        		android:text="12345678901"
+        		android:textColor="#3d3d3c"
+        		android:numeric="integer"
+        		android:maxLength="11"
+        		android:ellipsize="end"
+        		android:singleLine="true"
+        		android:background="#adf86b"
+        		android:enabled="false"
+        		/>
+
+    
+            <TextView 
+        		android:id="@+id/studentDormitory"
+        		android:singleLine="true"
+        		android:layout_width="90dp"
+       		    android:layout_height="wrap_content"
+       		    android:layout_below="@+id/studentTel"
+       		    android:layout_marginTop="5dp"
+       		    android:layout_marginRight="5dp"
+        		android:layout_alignParentLeft="true"
+        		android:text="Dormitory:  "
+        		android:textSize="15sp"
+        		android:textColor="#3d3d3c"
+        		android:background="#79f449" 
+        		/>
+    
+    		<EditText 
+        		android:id="@+id/userDormitory"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_below="@+id/studentTel"
+        		android:layout_toRightOf="@+id/studentDormitory"
+        		android:layout_marginTop="5dp"
+        		android:textSize="15sp"
+        		android:text="zhishanyuan2hao"
+        		android:textColor="#3d3d3c"
+        		android:ellipsize="end"
+        		android:singleLine="true"
+        		android:background="#79f449"
+        		android:enabled="false"
+        		/>
+
+    
+            <TextView 
+        		android:id="@+id/studentRoom"
+        		android:singleLine="true"
+        		android:layout_width="90dp"
+       		    android:layout_height="wrap_content"
+       		    android:layout_below="@+id/studentDormitory"
+       		    android:layout_marginTop="5dp"
+       		    android:layout_marginRight="5dp"
+        		android:layout_alignParentLeft="true"
+        		android:text="Room:         "
+        		android:textSize="15sp"
+        		android:textColor="#3d3d3c"
+        		android:background="#adf86b" 
+        		/>
+    
+    		<EditText 
+        		android:id="@+id/userRoom"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_below="@+id/studentDormitory"
+        		android:layout_marginTop="5dp"
+        		android:layout_toRightOf="@+id/studentRoom"
+        		android:textSize="15sp"
+        		android:text="210"
+        		android:textColor="#3d3d3c"
+        		android:numeric="integer"
+        		android:maxLength="3"
+        		android:ellipsize="end"
+        		android:singleLine="true"
+        		android:background="#adf86b"
+        		android:enabled="false"
+        		/>
+    
+            <TextView 
+        		android:id="@+id/studentEmail"
+        		android:singleLine="true"
+        		android:layout_width="90dp"
+       		    android:layout_height="wrap_content"
+       		    android:layout_below="@+id/studentRoom"
+       		    android:layout_marginTop="5dp"
+       		    android:layout_marginRight="5dp"
+        		android:layout_alignParentLeft="true"
+        		android:text="Email:         "
+        		android:textSize="15sp"
+        		android:textColor="#3d3d3c"
+        		android:background="#79f449" 
+        		/>
+    
+    		<EditText 
+        		android:id="@+id/userEmail"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_below="@+id/studentRoom"
+        		android:layout_toRightOf="@+id/studentEmail"
+        		android:layout_marginTop="5dp"
+        		android:textSize="15sp"
+        		android:text="312321312@qq.com"
+        		android:textColor="#3d3d3c"
+        		android:ellipsize="end"
+        		android:singleLine="true"
+        		android:hint="email    "
+        		android:background="#79f449"
+        		android:enabled="false"
+        		/>
+  	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BorrowedActivity" >
+    
+    <RelativeLayout 
+        android:id="@+id/toprl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#d9f8c9">
+    <Button
+        android:id="@+id/backbtn_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#59a019"
+        android:textColor="#ffffff"
+        android:text="BACK"
+        android:textSize="25sp"/>
+    
+    <TextView
+        android:id="@+id/borrow_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Borrow"
+        android:textSize = "25sp"
+        android:textColor="#417117"
+        android:layout_marginTop="10dp"
+        />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/midrl"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/toprl"
+        android:background="#d9f8c9"  
+        >
+        
+        <TextView 
+            android:id="@+id/bookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="BOOK NAME"
+            android:textSize="30dp"
+            android:textColor="#417117"/>
+        
+        <TextView
+            android:id="@+id/lender_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookName"
+            android:layout_alignParentLeft="true"
+            android:text="Belonger Information"
+            android:textSize="26sp"
+            android:textColor="#417117"
+            
+            />
+        
+        <TextView
+            android:id="@+id/lender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name  "
+            android:layout_below="@+id/lender_title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#417117"/>
+        <TextView
+            android:id="@+id/name_lender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="zhang mins"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lender_title"
+            android:layout_toRightOf="@+id/lender_name"
+            android:textColor="#464646"/>
+        
+        <TextView
+            android:id="@+id/lender_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address  "
+            android:layout_below="@+id/lender_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#417117"/>
+        <TextView
+            android:id="@+id/address_lender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="至善园3号533"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lender_name"
+            android:layout_toRightOf="@+id/lender_address"
+            android:textColor="#464646"/>
+        
+        <TextView
+            android:id="@+id/lender_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tel  "
+            android:layout_below="@+id/lender_address"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#417117"/>
+        <TextView
+            android:id="@+id/tel_lender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="12345678901"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lender_address"
+            android:layout_toRightOf="@+id/lender_tel"
+            android:textColor="#464646"/>
+        
+        <TextView
+            android:id="@+id/lender_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email  "
+            android:layout_below="@+id/lender_tel"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#417117"/>
+        <TextView
+            android:id="@+id/email_lender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="43278483@qq.com"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lender_tel"
+            android:layout_toRightOf="@+id/lender_email"
+            android:textColor="#464646"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/bottomrl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/midrl"
+        android:background="#d9f8c9">
+        <RelativeLayout 
+            android:id="@+id/insiderl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            >
+            
+        <Button 
+            android:id="@+id/getbookbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Got The Book?"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:background="#59a019"
+            />
+
+        </RelativeLayout>
+       
+    </RelativeLayout>
+    
+
+
+</RelativeLayout>

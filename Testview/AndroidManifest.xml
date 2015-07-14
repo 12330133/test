@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testview"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="18" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.testview.TestActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.testview.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.example.testview.BorrowActivity"
+            android:label="@string/title_activity_borrow" >
+        </activity>
+        <activity
+            android:name="com.example.testview.ImformationActivity"
+            android:label="@string/title_activity_imformation" >
+        </activity>
+        <activity
+            android:name="com.example.testview.ItemActivity"
+            android:label="@string/title_activity_item" >
+        </activity>
+        <activity
+            android:name="com.example.testview.InitActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.testview.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.testview.SigninActivity"
+            android:label="@string/title_activity_signin" >
+        </activity>
+        <activity
+            android:name="com.example.testview.HistoryActivity"
+            android:label="@string/title_activity_history" >
+        </activity>
+        <activity
+            android:name="com.example.testview.ShareActivity"
+            android:label="@string/title_activity_share" >
+        </activity>
+        <activity
+            android:name="com.example.testview.BorrowedActivity"
+            android:label="@string/title_activity_borrowed" >
+        </activity>
+    </application>
+
+</manifest>

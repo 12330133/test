@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123456"
+    tools:context=".BorrowActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/toprl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#d9f8c9"
+        android:padding="10dp" >
+        
+        <TextView 
+            android:id="@+id/bookName"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Book Name:"
+            android:textSize="15sp"
+            android:background="#d9f8c9"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:layout_marginRight="5dp"/>
+        <RelativeLayout 
+            android:id="@+id/line1"
+            android:background="#616239"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bookName"
+            android:padding="2dp"
+            android:layout_alignParentTop="true"
+            >
+        <EditText
+            android:id="@+id/inputbookName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="input book name"
+            android:background="#f7fab1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="15sp"/>
+        </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/bookISBN"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Book ISBN:   "
+            android:textSize="15sp"
+            android:background="#d9f8c9"
+            android:layout_below="@+id/bookName"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="5dp"/>
+        
+        <RelativeLayout
+            android:id="@+id/line2"
+            android:background="#616239"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bookISBN"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:layout_below="@+id/bookName"
+            >
+        <EditText
+            android:id="@+id/inputbookISBN"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="input book ISBN"
+            android:background="#f7fab1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="15sp"/>
+        </RelativeLayout>
+        <TextView 
+            android:id="@+id/bookAuthor"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Book Author:"
+            android:textSize="15sp"
+            android:background="#d9f8c9"
+            android:layout_below="@+id/bookISBN"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="5dp"/>
+        
+        <RelativeLayout
+            android:id="@+id/line2"
+            android:background="#616239"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bookAuthor"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:layout_below="@+id/bookISBN"
+            >
+        <EditText
+            android:id="@+id/inputbookAuthor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="input book Author"
+            android:background="#f7fab1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="15sp"/>
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/bottomrl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#d9f8c9"
+        android:layout_below="@+id/toprl"
+        android:padding="5dp">
+        <Button 
+            android:id="@+id/addBookbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#59a019"
+            android:text="ADD BOOK"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        <TextView 
+            android:id="@+id/bookImformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Imformation:"
+            android:textSize="15sp"
+            android:background="#d9f8c9"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"/>
+        <RelativeLayout
+            android:id="@+id/line2"
+            android:background="#616239"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/addBookbtn"
+            android:layout_below="@+id/bookImformation"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            >
+        <EditText
+            android:id="@+id/inputImformation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f7fab1"
+            android:hint="input something for your book"
+            android:gravity="top"
+            android:textSize="15sp"/>
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>
